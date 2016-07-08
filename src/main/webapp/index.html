@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Simple Calculator in Codenvy</title>
+  <h2>
+    Suvarna Pansambal
+  </h2>
+</head>
+<body>
+  <script>
+    function add()
+    {
+    var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;
+    var sum=+n1 + +n2;
+    alert(sum);
+      document.getElementById("result").innerText=sum;
+    }
+    
+     function mul()
+    {
+    var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;
+    var mul=+n1 * +n2;
+    alert(mul);
+      document.getElementById("result").innerText=mul;
+    }
+    
+     function sub()
+    {
+    var n1=document.getElementById("num1").value;
+  var n2=document.getElementById("num2").value;
+    var sub=+n1 - +n2;
+    alert(sub);
+      document.getElementById("result").innerText=sub;
+    }
+  </script>
+<form>
+  
+  Enter no 1;<input type= "number" id="num1" required>
+  Enter no 2;<input type= "number" id="num2" required>
+  <input type="button" value="add" onclick="add();">
+  <input type="button" value="mul" onclick="mul();">
+  <input type="button" value="sub" onclick="sub();">
+  <div id="resultadd"></div>
+    <div id="resultmul">   </div>
+      <div id="resultsub">  </div>
+        
+    
+  
+     
+    
+    
+  </form>
+</body>
+</html>
